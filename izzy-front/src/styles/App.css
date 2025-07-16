@@ -7,6 +7,39 @@
   pointer-events: none;
 }
 
+.title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 26px;
+  color: #1D3A6C;
+}
+
+.title-content {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  color: #1D3A6C;
+}
+
+.textcontent {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.elements {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1D3A6C;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

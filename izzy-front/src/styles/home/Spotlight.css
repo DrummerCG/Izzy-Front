@@ -1,0 +1,8 @@
+.cardtitle {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #1D3A6C;
+  color: white !important;
+  font-family: 'Nunito', sans-serif;
+}

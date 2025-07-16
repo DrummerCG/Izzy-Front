@@ -23,7 +23,7 @@ const UserOptions = () => {
         return (
             <div>
                 <LoginModal show={showLoginModal} onHide={() => setShowLoginModal(false)} />
-                <label onClick={() => setShowLoginModal(true)}>Iniciar Sesión</label>
+                <label className='link' onClick={() => setShowLoginModal(true)}>Iniciar Sesión</label>
             </div>
         );
     } else {

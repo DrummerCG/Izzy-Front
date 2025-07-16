@@ -1,0 +1,32 @@
+.footer-container {
+  background-color: #1D3A6C; /* Same dark blue as the header */
+}
+
+.footer-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: Bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: left;
+}
+
+.footer-divider {
+  border-top: 3px solid rgba(255, 255, 255, 0.15);
+  opacity: 1; /* Anula la opacidad por defecto de Bootstrap para un control total */
+}
+
+.footer-list {
+  list-style-type: none; /* Quita los puntos/viñetas */
+  padding-left: 0; /* Quita el espacio a la izquierda por defecto */
+}
+
+.social-icon-link {
+  color: #ffffff;
+  font-size: 1.5rem; /* Hacemos los iconos un poco más grandes */
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icon-link:hover {
+  color: #cccccc; /* Cambia a un gris claro al pasar el mouse */
+}
