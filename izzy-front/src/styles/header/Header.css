@@ -31,12 +31,19 @@
   text-decoration: none;
 }
 
+/* Este código soluciona un conflicto de estilos y asegura que todos los
+   enlaces de la barra de navegación principal sean blancos. */
+.headerContainer .link,
+.headerContainer .nav-link {
+  color: #ffffff !important;
+}
+
 .navigation-options {
   justify-content: flex-end;
   flex-direction: row;
 }
 
-@media (max-width: 991.98px) { /* Bootstrap lg breakpoint */
+@media (max-width: 1000px) { /* Bootstrap lg breakpoint */
   .navigation-options {
     justify-content: flex-start !important;
     width: 100%;
@@ -49,16 +56,17 @@
   }
 }
 
+.vertical-separator {
+  border-left: 1px solid rgba(252, 252, 252, 0.75);
+  height: 24px;
+  margin: 0 1rem;
+}
+
 .headerContainer.parallax {
+  width: 100%;
   background-image: url('../../../public/images/banner_home.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.vertical-separator {
-  border-left: 1px solid rgba(252, 252, 252, 0.75);
-  height: 24px;
-  margin: 0 1rem;
 }

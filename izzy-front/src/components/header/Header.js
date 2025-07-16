@@ -24,9 +24,9 @@ const Header = () => {
                   </Link>
                 </Nav.Item>
                 <NavDropdown title="Rutas de Formación" id="learning-paths-dropdown" className='navItem title link'>
-                  <NavDropdown.Item as={Link} to="/learning-paths/data-scientist">Cientifico de datos</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/learning-paths/dotnet">Ruta de formacion en .Net</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/learning-paths/automation">Ruta de formacion en automatizacion</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/learning-paths/data-scientist">Científico de datos</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/learning-paths/dotnet">Ruta de formación en .Net</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/learning-paths/automation">Ruta de formación en automatización</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="Cursos" id="courses-dropdown" className='navItem title link'>
                   <NavDropdown.Item as={Link} to="/courses/web-apps">Aplicaciones web</NavDropdown.Item>
@@ -35,7 +35,7 @@ const Header = () => {
                 </NavDropdown>
                 <Nav.Item className='navItem'>
                   <Link className='title link' to='/about'>
-                    Quienes Somos
+                    Quiénes Somos
                   </Link>
                 </Nav.Item>
               </Nav>
@@ -50,7 +50,7 @@ const Header = () => {
         </div>
       </div>
       <div id='bannerContainer' className='w-100 -center align-items-center text-center'>
-        <h1 style={{ marginTop: '80px', marginBottom: '40px', fontFamily: 'Nunito, sans-serif', 'fontSize': '30px', 'fontWeight': 'bold'}}>Continua tu formacion con IzyAcademy</h1>
+        <h1 style={{ marginTop: '80px', marginBottom: '40px', fontFamily: 'Nunito, sans-serif', 'fontSize': '50px', 'fontWeight': 'bold'}}>Continúa tu formación con IzyAcademy</h1>
         <p style={{ marginTop: '10px', marginBottom: '200px', fontFamily: 'Open Sans, sans-serif', 'fontSize': '16px' }}>Te ofrecemos una experiencia de aprendizaje basada en la formación por proyectos,<br /> apoyada en recursos interactivos para que tu aprendizaje sea efectivo.</p>
       </div>
     </Navbar>

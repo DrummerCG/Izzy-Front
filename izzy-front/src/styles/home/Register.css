@@ -1,0 +1,89 @@
+/* src/styles/home/Register.css */
+
+.register-container {
+  background-color: #f8f9fa; /* Light background */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 700px; /* Adjusted width to better match the image */
+  max-width: 100%; /* Ensures responsiveness on smaller viewports */
+}
+
+.register-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.register-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000; /* Dark blue color */
+  margin-bottom: 20px;
+}
+
+.register-container .form-grid {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
+}
+
+/* Target the Email group, checkboxes, and button to span both columns */
+.register-container form > div:nth-child(3),
+.register-container form .form-check,
+.register-container form .btn-primary {
+  grid-column: 1 / -1;
+}
+
+.register-container .form-check-input:checked {
+  background-color: #1D3A6C;
+  border-color: #1D3A6C;
+}
+
+/* Apply one-column layout for each field and label */
+.register-container .form-grid .form-group {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / -1;
+}
+
+.register-container .form-label {
+  font-weight: 500;
+  color: #555;
+}
+
+.register-container .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.register-container .form-control:focus {
+  border-color: #1D3A6C;
+  box-shadow: 0 0 5px rgba(29, 58, 108, 0.25);
+}
+
+.register-container .form-check-label {
+  color: #555;
+}
+
+.register-container .btn-primary {
+  background-color: #1D3A6C;
+  border-color: #1D3A6C;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.register-container .btn-primary:hover {
+  background-color: #1D3A6C;
+  border-color: #1D3A6C;
+}
+
+.register-container .disabled-button {
+  opacity: 0.65; /* Reduce la opacidad del botón deshabilitado */
+}

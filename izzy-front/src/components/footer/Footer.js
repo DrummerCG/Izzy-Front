@@ -10,15 +10,15 @@ const Footer = () => {
       <Container id='footerListsContainer'>
         <Row className="text-start">
           <Col md>
-            <h6 className="footer-title">Contactanos</h6>
+            <h6 className="footer-title">Contáctanos</h6>
             <ul id='contactUsList' className="footer-list">
               <li>WhatsApp: +300 255 02 65</li>
               <li>Email: comercial@qvision.us</li>
-              <li>Comunicate con nosotros</li>
+              <li>Comunícate con nosotros</li>
             </ul>
           </Col>
           <Col md>
-            <h6 className="footer-title">Categorias de cursos</h6>
+            <h6 className="footer-title">Categorías de cursos</h6>
             <ul id='categoriesList' className="footer-list">
               <li>Desarrollo</li>
               <li>Metodología de Pruebas</li>
@@ -35,10 +35,10 @@ const Footer = () => {
               <li>Scrum Master</li>
               <li>Scrum Product Owner</li>
               <li>Scrum Developer</li>
-              <li>Big Data</li>
+              <li>Agile Coach</li>
               <li>Design Thinking</li>
               <li>Kanban</li>
-              <li>Cloud</li>
+              <li>OKR</li>
               <li>DevOps</li>
             </ul>
           </Col>
@@ -48,8 +48,8 @@ const Footer = () => {
               <li>Desarrollo de Software</li>
               <li>Aseguramiento de Calidad</li>
               <li>Automatización de Procesos</li>
-              <li>RPA</li>
-              <li>Talento</li>
+              <li>Con RPA</li>
+              <li>IT Staffing</li>
               <li>Cesión Inteligente de Datos</li>
             </ul>
           </Col>
@@ -64,12 +64,12 @@ const Footer = () => {
       </Container>
       <Row className="align-items-center py-3">
         <Col md className="text-center text-md-start mb-3 mb-md-0">
-          <img src="/images/logo_actualizado IZY.png" alt="IzyAcademy Logo" style={{ height: '40px' }} />
+          <img src="/images/logo_actualizado IZY.png" alt="IzyAcademy Logo" style={{ height: '40px', position: 'relative', left: '30px' }} />
         </Col>
         <Col md className="text-center mb-3 mb-md-0">
           <p className="footer-text mb-0"><b>Términos y Condiciones - Política Tratamiento de Datos</b></p>
         </Col>
-        <Col md className="text-center text-md-end">
+        <Col md className="text-center text-md-end" style={{ position: 'relative', right: '300px' }}>
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon-link me-3">
             <FontAwesomeIcon icon={faFacebook} />
           </a>

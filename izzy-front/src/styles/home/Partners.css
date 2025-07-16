@@ -1,0 +1,14 @@
+.partners-title {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+}
+
+.partner-logo {
+  transition: transform 0.2s ease-in-out; /* Smooth transition for the transform property */
+}
+
+.partner-logo:hover {
+  transform: scale(1.30); 
+}

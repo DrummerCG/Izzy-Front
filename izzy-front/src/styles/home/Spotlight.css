@@ -1,8 +1,21 @@
 .cardtitle {
+  background-color: #1D3A6C;  
   font-size: 1rem;
   font-weight: bold;
-  text-align: center;
-  background-color: #1D3A6C;
-  color: white !important;
+  color: #fff !important;
   font-family: 'Nunito', sans-serif;
+}
+
+.spotlight-title {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+.partners-divider {
+  border-top: 3px solid rgba(0, 0, 0, 0.1); /* A subtle grey */
+  opacity: 1;
+  width: 100%;
+  margin: 20px auto; /* Center the divider and add some vertical spacing */
 }

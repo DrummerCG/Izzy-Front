@@ -5,7 +5,7 @@ import "../../../styles/home/Spotlight.css";
 const Spotlight = () => {
   return (
     <>
-      <h1 className="my-4">Novedades</h1>
+      <h1 className="my-4 spotlight-title">Novedades</h1>
       <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={6} lg={6} className="mb-4">
@@ -13,7 +13,7 @@ const Spotlight = () => {
               <Card.Img variant="top" src="https://tse1.mm.bing.net/th/id/OIP.Gvheg6Yf22NQFqyojQMc_wHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nuevo Curso de JavaScript" />
               <Card.Body>
                 <Card.Title className="text-center cardtitle">Bienvenidos a IzyAcademy</Card.Title>
-                <Card.Text>Explora las últimas características de JavaScript y mejora tus habilidades. Descubre el futuro de la web, encuentra la solución a tus necesidades de desarrollo.</Card.Text>
+                <Card.Text>Explora las últimas características de JavaScript y mejora tus habilidades. Descubre el futuro de la web, encuentra la solución a tus necesidades de desarrollo o ciberseguridad sin detenerte.</Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -24,16 +24,16 @@ const Spotlight = () => {
                   <Card.Img variant="top" src="https://image.freepik.com/foto-gratis/hermosa-chica-usando-computadora-portatil-sonriendo_85574-14086.jpg" alt="Curso de React" />
                   <Card.Body>
                     <Card.Title className="text-center cardtitle">Curso de React</Card.Title>
-                    <Card.Text>Aprende a desarrollar construyendo aplicaciones web modernas con React.</Card.Text>
+                    <Card.Text>Aprende a desarrollar construyendo aplicaciones web modernas y funcionales con React.</Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
               <Col xs={12} sm={6} lg={6}>
                 <Card>
-                  <Card.Img variant="top" src="https://tse1.mm.bing.net/th/id/OIP.okj1B-orwKuIZ4ujQNBPFQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Curso de Node.js" />
+                  <Card.Img variant="top" src="https://img.freepik.com/fotos-premium/hombre-negocios-joven-que-trabaja-ordenador-portatil-oficina_109710-3674.jpg" alt="Curso de Node.js" />
                   <Card.Body>
                     <Card.Title className="cardtitle text-center">Curso de Node.js</Card.Title>
-                    <Card.Text>Desarrolla aplicaciones del lado del servidor con Node.js.</Card.Text>
+                    <Card.Text>Desarrolla aplicaciones del lado del servidor con Node.js y desarrolla como quieras .</Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
@@ -42,7 +42,7 @@ const Spotlight = () => {
                   <Card.Img variant="top" src="https://img.freepik.com/foto-gratis/chica-libro_1157-5451.jpg" alt="Curso de Python" />
                   <Card.Body>
                     <Card.Title className="text-center cardtitle">Curso de Python</Card.Title>
-                    <Card.Text>Domina Python y sus aplicaciones en ciencia de datos y desarrollo web.</Card.Text>
+                    <Card.Text>Domina Python y sus aplicaciones en ciencia de datos y desarrollo web, empieza hoy mismo.</Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
@@ -59,6 +59,9 @@ const Spotlight = () => {
           </Col>
         </Row>
       </Container>
+      <Container>
+        <hr className="partners-divider" />
+    </Container>
     </>
   );
 };

@@ -13,17 +13,17 @@
 
 .footer-divider {
   border-top: 3px solid rgba(255, 255, 255, 0.15);
-  opacity: 1; /* Anula la opacidad por defecto de Bootstrap para un control total */
+  opacity: 1; 
 }
 
 .footer-list {
-  list-style-type: none; /* Quita los puntos/viñetas */
-  padding-left: 0; /* Quita el espacio a la izquierda por defecto */
+  list-style-type: none; 
+  padding-left: 0; 
 }
 
 .social-icon-link {
   color: #ffffff;
-  font-size: 1.5rem; /* Hacemos los iconos un poco más grandes */
+  font-size: 1.5rem; 
   transition: color 0.3s ease-in-out;
 }
 
