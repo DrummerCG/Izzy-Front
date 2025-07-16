@@ -1,6 +1,6 @@
-# Nombre del Proyecto (Reemplázalo con el nombre real)
+# IZY-ACADEMY-FRONT
 
-Breve descripción del proyecto.  ¿De qué trata? ¿Cuál es su propósito principal?
+Front en React para la plataforma de formacion academica Izy-academy
 
 ## Tecnologías Utilizadas
 
