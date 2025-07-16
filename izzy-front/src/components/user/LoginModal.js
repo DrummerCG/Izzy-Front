@@ -19,6 +19,10 @@ const LoginModal = ({ show, onHide }) => {
       try {
         const response = await axios.post('http://localhost:8080/auth/login', { email, password });
         console.log('Login successful:', response.data);
+        if (response) {
+          localStorage.setItem('username', response.data);
+          window.location.reload();
+        }
       } catch (error) {
         setError(error.message ? error.message : 'Error de conexión');
         console.error('Login failed:', error);

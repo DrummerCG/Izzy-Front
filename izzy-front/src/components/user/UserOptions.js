@@ -4,14 +4,20 @@ import LoginModal from "./LoginModal";
 const UserOptions = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [showLoginModal, setShowLoginModal] = useState(false);
-    const [userName, setUserName] = useState("");
+    const [userName, setUserName] = useState(null);
+
+    const HandleLogout = () => {
+        setIsLoggedIn(false); 
+        setUserName(null);
+        localStorage.setItem('username', null);
+        window.location.reload();
+    }
 
     useEffect(() => {
-        const token = localStorage.getItem("jwt");
-        if (token) {
+        const username = localStorage.getItem("username");
+        if (username !== null && username !== "null" && username !== undefined) {
             try {
-                const user = JSON.parse(atob(token.split('.')[1]));
-                setUserName(user.name || "Usuario");
+                setUserName(username);
                 setIsLoggedIn(true);
             } catch (e) {
                 setIsLoggedIn(false);
@@ -29,7 +35,7 @@ const UserOptions = () => {
     } else {
         return (
             <div>
-                <label onClick={() => setIsLoggedIn(false)}>
+                <label onClick={HandleLogout}>
                     {userName} (Cerrar Sesión)
                 </label>
             </div>
