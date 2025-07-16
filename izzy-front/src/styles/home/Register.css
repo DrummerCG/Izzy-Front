@@ -5,8 +5,10 @@
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 700px; /* Adjusted width to better match the image */
+  /* Eliminar width: 700px; */ /* Anteriormente esto era width: 700px; */
   max-width: 100%; /* Ensures responsiveness on smaller viewports */
+  /* Añadir un ancho máximo para escritorio si lo deseas, pero con fluid-width */
+  width: 100%; /* Asegura que el contenedor ocupe el ancho disponible de su columna */
 }
 
 .register-container h1 {
@@ -23,29 +25,42 @@
   margin-bottom: 20px;
 }
 
+/* Ajustes para el grid del formulario */
 .register-container .form-grid {
     display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1.5rem;
+    /* Por defecto, una columna en móviles */
+    grid-template-columns: 1fr;
+    column-gap: 1.5rem;
 }
 
-/* Target the Email group, checkboxes, and button to span both columns */
-.register-container form > div:nth-child(3),
-.register-container form .form-check,
-.register-container form .btn-primary {
-  grid-column: 1 / -1;
+/* Media query para pantallas medianas (md) y superiores */
+@media (min-width: 768px) { /* Bootstrap's md breakpoint is 768px */
+    .register-container .form-grid {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en escritorio */
+    }
+
+    /* Asegúrate de que los campos que deben ocupar una columna completa se comporten así en escritorio */
+    .register-container form > div:nth-child(3), /* Correo electrónico */
+    .register-container form > div:nth-child(4), /* Contraseña */
+    .register-container form > div:nth-child(5), /* Confirmar Contraseña */
+    .register-container form .form-check,
+    .register-container form .btn-primary {
+      grid-column: 1 / -1; /* Ocupan ambas columnas */
+    }
 }
 
-.register-container .form-check-input:checked {
-  background-color: #1D3A6C;
-  border-color: #1D3A6C;
-}
 
-/* Apply one-column layout for each field and label */
+/* No necesitas esta regla específica para form-group si el grid-template-columns se maneja con media queries */
 .register-container .form-grid .form-group {
   display: flex;
   flex-direction: column;
-  grid-column: 1 / -1;
+  /* grid-column: 1 / -1; <-- Esto forzaba una columna siempre, ahora lo maneja el media query */
+}
+
+/* El resto de tu CSS permanece igual */
+.register-container .form-check-input:checked {
+  background-color: #1D3A6C;
+  border-color: #1D3A6C;
 }
 
 .register-container .form-label {
