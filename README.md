@@ -46,8 +46,3 @@ Dentro del directorio del proyecto, puedes ejecutar los siguientes comandos:
 *   `yarn build`:  Crea una versión optimizada para producción en la carpeta `build`.
 *   `yarn test`:  Ejecuta las pruebas unitarias (si las hay).
 *   `yarn eject`:  **¡Atención!**  Este comando es irreversible. Expulsa la configuración de Create React App, dándote control total sobre las dependencias de configuración (webpack, Babel, etc.).  Úsalo solo si necesitas una configuración muy personalizada.
-
-## Estructura del Proyecto (Ejemplo)
-
-Un ejemplo común de la estructura de un proyecto Create React App:
-
