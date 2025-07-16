@@ -63,10 +63,21 @@
 }
 
 .headerContainer.parallax {
+  position: relative; /* Requerido para posicionar el pseudo-elemento */
   width: 100%;
+  /* Se crea un contexto de apilamiento para que z-index funcione correctamente */
+  z-index: 0;
+}
+
+.headerContainer.parallax::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
   background-image: url('../../../public/images/banner_home.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.6; 
+  z-index: -1;
 }
