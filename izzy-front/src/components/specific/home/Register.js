@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button, Image } from "react-bootstrap";
-import axios from "axios"; // Importar axios
-import Loading from "../../animations/Loading"; // Asegúrate de que la ruta sea correcta
+import axios from "axios";
+import Loading from "../../animations/Loading";
 import "../../../styles/home/Register.css";
 
 const Register = () => {
