@@ -6,7 +6,9 @@
 }
 
 .partner-logo {
-  transition: transform 0.2s ease-in-out; /* Smooth transition for the transform property */
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
 }
 
 .partner-logo:hover {
